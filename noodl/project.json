@@ -1,0 +1,1376 @@
+{
+    "name": "N224_obniz",
+    "components": [
+        {
+            "name": "/#Example/Joystick",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "4edacd60-d9bb-95a9-a40f-59c3024c3d1e",
+                        "fromProperty": "onTextChanged",
+                        "toId": "8fe641d5-df38-2abc-1d29-9952cd76c2d6",
+                        "toProperty": "n"
+                    },
+                    {
+                        "fromId": "4edacd60-d9bb-95a9-a40f-59c3024c3d1e",
+                        "fromProperty": "onTextChanged",
+                        "toId": "5793668e-87ae-9217-7a95-8b055e2d0e57",
+                        "toProperty": "n"
+                    },
+                    {
+                        "fromId": "92557f97-0e39-ccf4-6906-8e9c711f5b3b",
+                        "fromProperty": "x",
+                        "toId": "8fe641d5-df38-2abc-1d29-9952cd76c2d6",
+                        "toProperty": "x"
+                    },
+                    {
+                        "fromId": "92557f97-0e39-ccf4-6906-8e9c711f5b3b",
+                        "fromProperty": "y",
+                        "toId": "5793668e-87ae-9217-7a95-8b055e2d0e57",
+                        "toProperty": "y"
+                    },
+                    {
+                        "fromId": "8fe641d5-df38-2abc-1d29-9952cd76c2d6",
+                        "fromProperty": "result",
+                        "toId": "9bd10721-a766-0c23-69df-3e057cd97eff",
+                        "toProperty": "transformX"
+                    },
+                    {
+                        "fromId": "5793668e-87ae-9217-7a95-8b055e2d0e57",
+                        "fromProperty": "result",
+                        "toId": "9bd10721-a766-0c23-69df-3e057cd97eff",
+                        "toProperty": "transformY"
+                    },
+                    {
+                        "fromId": "8fe641d5-df38-2abc-1d29-9952cd76c2d6",
+                        "fromProperty": "result",
+                        "toId": "60e27c50-600e-2e40-3aa4-46ad349bbaa4",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "5793668e-87ae-9217-7a95-8b055e2d0e57",
+                        "fromProperty": "result",
+                        "toId": "fb1003da-7d3c-f198-b84e-00c31db19927",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "8fe641d5-df38-2abc-1d29-9952cd76c2d6",
+                        "fromProperty": "result",
+                        "toId": "c6f34f73-2cf3-bf03-2f78-b943bd2dddf8",
+                        "toProperty": "transformX"
+                    },
+                    {
+                        "fromId": "5793668e-87ae-9217-7a95-8b055e2d0e57",
+                        "fromProperty": "result",
+                        "toId": "c6f34f73-2cf3-bf03-2f78-b943bd2dddf8",
+                        "toProperty": "transformY"
+                    },
+                    {
+                        "fromId": "071210c6-7e3f-40a6-a88c-ecd3cdd663a4",
+                        "fromProperty": "onClick",
+                        "toId": "e641a5f3-ed95-a1d3-8b24-204c60fdb366",
+                        "toProperty": "toggle"
+                    },
+                    {
+                        "fromId": "e641a5f3-ed95-a1d3-8b24-204c60fdb366",
+                        "fromProperty": "at-play",
+                        "toId": "bdcc23c1-dd59-bf56-c918-9f139f42ab50",
+                        "toProperty": "play"
+                    },
+                    {
+                        "fromId": "e641a5f3-ed95-a1d3-8b24-204c60fdb366",
+                        "fromProperty": "at-stop",
+                        "toId": "bdcc23c1-dd59-bf56-c918-9f139f42ab50",
+                        "toProperty": "pause"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "eacc74e7-4dce-2baf-354b-8070e2b2b872",
+                        "type": "Group",
+                        "x": 177,
+                        "y": 141.5,
+                        "parameters": {
+                            "backgroundColor": "#FFFFFF"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "bdcc23c1-dd59-bf56-c918-9f139f42ab50",
+                                "type": "Video",
+                                "x": 20,
+                                "y": 128,
+                                "parameters": {
+                                    "src": "GoPro.mp4",
+                                    "sizeMode": "explicit",
+                                    "position": "absolute",
+                                    "loop": true
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "c6f34f73-2cf3-bf03-2f78-b943bd2dddf8",
+                                "type": "Image",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {
+                                    "src": "shimizu-san.png",
+                                    "sizeMode": "explicit",
+                                    "width": {
+                                        "value": 100,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 100,
+                                        "unit": "px"
+                                    },
+                                    "alignY": "center",
+                                    "alignX": "center",
+                                    "position": "absolute"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "9bd10721-a766-0c23-69df-3e057cd97eff",
+                                "type": "Circle",
+                                "x": 20,
+                                "y": 148,
+                                "parameters": {
+                                    "size": 30,
+                                    "alignX": "center",
+                                    "alignY": "center",
+                                    "position": "absolute",
+                                    "visible": false
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "4edacd60-d9bb-95a9-a40f-59c3024c3d1e",
+                                "type": "Text Input",
+                                "x": 20,
+                                "y": 342,
+                                "parameters": {
+                                    "startValue": "100",
+                                    "textStyle": "H1",
+                                    "position": "absolute",
+                                    "alignY": "bottom"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "60e27c50-600e-2e40-3aa4-46ad349bbaa4",
+                                "type": "Text",
+                                "x": 20,
+                                "y": 434,
+                                "parameters": {
+                                    "text": "Hello",
+                                    "textStyle": "H1",
+                                    "color": "wh",
+                                    "position": "absolute",
+                                    "alignY": "center"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "fb1003da-7d3c-f198-b84e-00c31db19927",
+                                "type": "Text",
+                                "x": 20,
+                                "y": 516,
+                                "parameters": {
+                                    "text": "Welcome to Noodl",
+                                    "textStyle": "H1",
+                                    "color": "wh",
+                                    "position": "absolute",
+                                    "alignY": "center",
+                                    "textAlignX": "right"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "071210c6-7e3f-40a6-a88c-ecd3cdd663a4",
+                                "type": "Group",
+                                "x": 20,
+                                "y": 598,
+                                "parameters": {
+                                    "sizeMode": "explicit",
+                                    "width": {
+                                        "value": 100,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 50,
+                                        "unit": "px"
+                                    },
+                                    "backgroundColor": "#A92952"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "92557f97-0e39-ccf4-6906-8e9c711f5b3b",
+                        "type": "Javascript2",
+                        "x": -306,
+                        "y": 243,
+                        "parameters": {
+                            "useExternalFile": "no",
+                            "code": "Node.Inputs = {\r\n    ObnizID: 'string',\r\n}\r\n\r\nNode.Outputs = {\r\n        x: \"number\",\r\n        y: \"number\"\r\n}\r\n\r\n\r\nlet obniz;\r\n\r\nNode.Signals.ScriptLoaded = function() {\r\n    obniz = new Obniz(Node.Inputs.ObnizID);\r\n    obniz.onconnect = async function() {\r\n    let joystick = obniz.wired(\"JoyStick\", {sw:0,x:1,y:2,vcc:3,gnd:4});\r\n\r\n    joystick.onchangex = function(val){\r\n        Node.Outputs.x = val;\r\n    };\r\n    joystick.onchangey = function(val){\r\n        Node.Outputs.y =  val;\r\n    };\r\n    };\r\n}\r\n\r\nNode.OnInit = function() {\r\n//\r\n}\r\n\r\nNode.Signals.Init = function() {\r\n      //during obniz connection\r\n}\r\n\r\n\r\nNode.Signals.ON =function(){\r\n}\r\n\r\nNode.Signals.OFF =function(){\r\n}\r\n\r\n",
+                            "ObnizID": "5233-9205"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "ObnizID",
+                                "plug": "input",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "group": "Inputs",
+                                "index": 4
+                            },
+                            {
+                                "name": "ScriptLoaded",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 5
+                            },
+                            {
+                                "name": "Init",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 6
+                            },
+                            {
+                                "name": "ON",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 7
+                            },
+                            {
+                                "name": "OFF",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 8
+                            },
+                            {
+                                "name": "x",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 9
+                            },
+                            {
+                                "name": "y",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 10
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "e8039b75-bfb5-17c3-b147-9bf5451ca019",
+                        "type": "Script Downloader",
+                        "x": -498.68732538108503,
+                        "y": 236.61239522865097,
+                        "parameters": {
+                            "input 0": "https://unpkg.com/obniz@3.x/obniz.js"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "8fe641d5-df38-2abc-1d29-9952cd76c2d6",
+                        "type": "Expression",
+                        "x": -109,
+                        "y": 183,
+                        "parameters": {
+                            "expression": "-round(x*n)"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "x",
+                                "type": "*",
+                                "plug": "input",
+                                "index": 2
+                            },
+                            {
+                                "name": "n",
+                                "type": "*",
+                                "plug": "input",
+                                "index": 3
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "5793668e-87ae-9217-7a95-8b055e2d0e57",
+                        "type": "Expression",
+                        "x": -121,
+                        "y": 333,
+                        "parameters": {
+                            "expression": "round(y*n)"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "y",
+                                "type": "*",
+                                "plug": "input",
+                                "index": 2
+                            },
+                            {
+                                "name": "n",
+                                "type": "*",
+                                "plug": "input",
+                                "index": 3
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "e641a5f3-ed95-a1d3-8b24-204c60fdb366",
+                        "type": "States",
+                        "x": 445.61879564677395,
+                        "y": 195.91466376224437,
+                        "parameters": {
+                            "states": "play,stop",
+                            "currentState": "stop"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To play",
+                                "name": "to-play",
+                                "group": "Go to state",
+                                "index": 5
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At play",
+                                "name": "at-play",
+                                "group": "Current state",
+                                "index": 6
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached play",
+                                "name": "reached-play",
+                                "group": "Current state",
+                                "index": 7
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To stop",
+                                "name": "to-stop",
+                                "group": "Go to state",
+                                "index": 8
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At stop",
+                                "name": "at-stop",
+                                "group": "Current state",
+                                "index": 9
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached stop",
+                                "name": "reached-stop",
+                                "group": "Current state",
+                                "index": 10
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        "play",
+                                        "stop"
+                                    ]
+                                },
+                                "group": "States",
+                                "displayName": "State",
+                                "name": "currentState",
+                                "default": "play",
+                                "index": 11
+                            }
+                        ],
+                        "children": []
+                    }
+                ]
+            },
+            "metadata": {
+                "canvasSize": {
+                    "width": "261px",
+                    "height": "344px"
+                },
+                "canvasPos": {
+                    "x": 491.3927648664125,
+                    "y": 93.45506571079005
+                }
+            }
+        },
+        {
+            "name": "/App",
+            "id": "7059bb15-c906-419a-82b9-982d3a0e633a",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "64fc7014-9a27-ae1c-2b6b-87aeb1db0cad",
+                        "fromProperty": "loaded",
+                        "toId": "b12dea94-2687-c92f-01ca-fe89640e1357",
+                        "toProperty": "ScriptLoaded"
+                    },
+                    {
+                        "fromId": "b12dea94-2687-c92f-01ca-fe89640e1357",
+                        "fromProperty": "temperature",
+                        "toId": "910995a9-6160-0672-26cf-68ba58c22e9a",
+                        "toProperty": "temperature"
+                    },
+                    {
+                        "fromId": "b12dea94-2687-c92f-01ca-fe89640e1357",
+                        "fromProperty": "humidity",
+                        "toId": "910995a9-6160-0672-26cf-68ba58c22e9a",
+                        "toProperty": "humidity"
+                    },
+                    {
+                        "fromId": "b12dea94-2687-c92f-01ca-fe89640e1357",
+                        "fromProperty": "power",
+                        "toId": "910995a9-6160-0672-26cf-68ba58c22e9a",
+                        "toProperty": "power"
+                    },
+                    {
+                        "fromId": "b12dea94-2687-c92f-01ca-fe89640e1357",
+                        "fromProperty": "name",
+                        "toId": "910995a9-6160-0672-26cf-68ba58c22e9a",
+                        "toProperty": "name"
+                    },
+                    {
+                        "fromId": "b12dea94-2687-c92f-01ca-fe89640e1357",
+                        "fromProperty": "name",
+                        "toId": "910995a9-6160-0672-26cf-68ba58c22e9a",
+                        "toProperty": "modelId"
+                    },
+                    {
+                        "fromId": "910995a9-6160-0672-26cf-68ba58c22e9a",
+                        "fromProperty": "id",
+                        "toId": "9dfb54cc-a311-cfec-033f-55e2ac6b416b",
+                        "toProperty": "modifyId"
+                    },
+                    {
+                        "fromId": "9dfb54cc-a311-cfec-033f-55e2ac6b416b",
+                        "fromProperty": "items",
+                        "toId": "3b11b0bf-63c7-dcb7-6b15-16399b871705",
+                        "toProperty": "items"
+                    },
+                    {
+                        "fromId": "910995a9-6160-0672-26cf-68ba58c22e9a",
+                        "fromProperty": "stored",
+                        "toId": "9dfb54cc-a311-cfec-033f-55e2ac6b416b",
+                        "toProperty": "add"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "49a0d324-1997-0e88-a5cf-019ac0b66373",
+                        "type": "Group",
+                        "x": 177,
+                        "y": 140.1396258580002,
+                        "parameters": {
+                            "backgroundColor": "#FFFFFF",
+                            "flexDirection": "row"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "670e0dce-750e-25dc-adef-0f906083a84a",
+                                "type": "Image",
+                                "label": "Background",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {
+                                    "src": "kitchen-2165756_1920.jpg",
+                                    "sizeMode": "explicit",
+                                    "position": "absolute",
+                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    filter:\"blur(1px)\",\n}",
+                                    "objectFit": "cover"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "3b11b0bf-63c7-dcb7-6b15-16399b871705",
+                                "type": "For Each",
+                                "x": 20,
+                                "y": 538,
+                                "parameters": {
+                                    "template": "/GVH5075"
+                                },
+                                "ports": [],
+                                "dynamicports": [
+                                    {
+                                        "name": "inputMappingScript",
+                                        "type": {
+                                            "name": "string",
+                                            "codeeditor": "javascript"
+                                        },
+                                        "displayName": "Script",
+                                        "group": "Input Mapping",
+                                        "default": "// Here you add mappings between the properties of the item objects and the inputs of the components.\n// 'myComponentInput': 'myObjectProperty',\n// 'anotherComponentInput': function () { return object.get('someProperty') + ' ' + object.get('otherProp') }\n// These are the default mappings based on the selected template component.\nmap({\n\t'name': 'name',\n\t'temperature': 'temperature',\n\t'humidity': 'humidity',\n\t'power': 'power',\n})\n",
+                                        "plug": "input",
+                                        "index": 5
+                                    }
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "406f4219-cf40-d8e4-5b9f-dc296a1b8517",
+                                "type": "Group",
+                                "x": 20,
+                                "y": 187,
+                                "parameters": {
+                                    "position": "absolute",
+                                    "opacity": 0.3,
+                                    "backgroundColor": "#000000",
+                                    "height": {
+                                        "value": 10,
+                                        "unit": "%"
+                                    },
+                                    "alignY": "bottom"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "b26cd658-3f4b-025d-98de-d7b796cca537",
+                                        "type": "Text",
+                                        "x": 20,
+                                        "y": 46,
+                                        "parameters": {
+                                            "text": "Home Thermo-Hygrometer powered by obniz",
+                                            "color": "#FFFFFF",
+                                            "textAlignY": "center",
+                                            "sizeMode": "explicit",
+                                            "textAlignX": "center"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "34572de5-0f3c-9bad-620c-b57b7ca3eac7",
+                                "type": "Image",
+                                "label": "Shimizusan",
+                                "x": 20,
+                                "y": 538,
+                                "parameters": {
+                                    "src": "shimizu-san.png",
+                                    "sizeMode": "explicit",
+                                    "width": {
+                                        "value": 20,
+                                        "unit": "%"
+                                    },
+                                    "height": {
+                                        "value": 20,
+                                        "unit": "%"
+                                    },
+                                    "alignY": "bottom",
+                                    "alignX": "right",
+                                    "position": "absolute",
+                                    "marginRight": {
+                                        "value": 8,
+                                        "unit": "px"
+                                    }
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b12dea94-2687-c92f-01ca-fe89640e1357",
+                        "type": "Javascript2",
+                        "x": -378.91870488838623,
+                        "y": 168.81879801847424,
+                        "parameters": {
+                            "useExternalFile": "no",
+                            "code": "Node.Inputs = {\r\n    ObnizID: 'string',\r\n}\r\n\r\nNode.Outputs = {\r\n    temperature: \"number\",\r\n    humidity: \"number\",\r\n    power:\"number\",\r\n    rssi: \"number\",\r\n    name: \"string\",\r\n}\r\n\r\n\r\n//let obniz;\r\n\r\nNode.Signals.ScriptLoaded = function () {\r\n    var obniz = new Obniz(Node.Inputs.ObnizID);\r\n    obniz.onconnect = async function () {\r\n        await obniz.ble.initWait();\r\n        var target = {\r\n            //localName: \"GVH5075_XXXX\",\r\n            localNamePrefix:\"GVH5075\"\r\n        };\r\n\r\n        obniz.ble.scan.onfind = async function (peripheral) {\r\n            Node.Outputs.name=peripheral.localName;\r\n            console.log(\"Name:\"+peripheral.localName);\r\n\r\n            const buf = peripheral.adv_data[26] * Math.pow(16, 4) + peripheral.adv_data[27] * Math.pow(16, 2) + peripheral.adv_data[28]\r\n            Node.Outputs.temperature = Math.floor(buf / 1000) / 10;\r\n            Node.Outputs.humidity = (buf % 1000) / 10;\r\n            Node.Outputs.power=peripheral.adv_data[29];\r\n            Node.Outputs.rssi=peripheral.rssi;\r\n            \r\n            //console.log(buf);\r\n            //console.log(temperature);\r\n            //console.log(pressure); \r\n            //console.log(\"RSSI:\"+peripheral.rssi);\r\n\r\n        };\r\n\r\n        obniz.ble.scan.onfinish = async function (peripherals, error) {\r\n            console.log(\"scan again\")\r\n            await obniz.ble.scan.startWait(target);\r\n        };\r\n\r\n        await obniz.ble.scan.startWait(target);\r\n    };\r\n}\r\n\r\n",
+                            "ObnizID": "XXXX-XXXX"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "ObnizID",
+                                "plug": "input",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "group": "Inputs",
+                                "index": 4
+                            },
+                            {
+                                "name": "ScriptLoaded",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 5
+                            },
+                            {
+                                "name": "temperature",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 6
+                            },
+                            {
+                                "name": "humidity",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 7
+                            },
+                            {
+                                "name": "power",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 8
+                            },
+                            {
+                                "name": "rssi",
+                                "type": {
+                                    "name": "number"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 9
+                            },
+                            {
+                                "name": "name",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 10
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "64fc7014-9a27-ae1c-2b6b-87aeb1db0cad",
+                        "type": "Script Downloader",
+                        "x": -562.4780464158475,
+                        "y": 166.23125024224146,
+                        "parameters": {
+                            "input 0": "https://unpkg.com/obniz@3.x/obniz.js"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "910995a9-6160-0672-26cf-68ba58c22e9a",
+                        "type": "Model",
+                        "x": -170.21577374615237,
+                        "y": 169.30905078864498,
+                        "parameters": {
+                            "properties": "name,temperature,humidity,power"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "name",
+                                "index": 11
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Changed Events",
+                                "displayName": "name Changed",
+                                "name": "changed-name",
+                                "index": 12
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "temperature",
+                                "index": 13
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Changed Events",
+                                "displayName": "temperature Changed",
+                                "name": "changed-temperature",
+                                "index": 14
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "humidity",
+                                "index": 15
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Changed Events",
+                                "displayName": "humidity Changed",
+                                "name": "changed-humidity",
+                                "index": 16
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "power",
+                                "index": 17
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Changed Events",
+                                "displayName": "power Changed",
+                                "name": "changed-power",
+                                "index": 18
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "9dfb54cc-a311-cfec-033f-55e2ac6b416b",
+                        "type": "Collection",
+                        "x": 14.417012401665716,
+                        "y": 176.39489766048806,
+                        "parameters": {
+                            "collectionId": "GVH5075"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ]
+            },
+            "metadata": {
+                "canvasPos": {
+                    "x": -633.4704174500085,
+                    "y": 70.07250972917868
+                }
+            }
+        },
+        {
+            "name": "/ Indicator",
+            "id": "30d4572d-0a5c-2c7a-2adc-b319d2df5171",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "9b5b12a2-2998-0bbe-99ab-362be577bc9d",
+                        "fromProperty": "savedValue",
+                        "toId": "7d8e15b9-ffce-7bdf-3a7f-615fd62e8d6b",
+                        "toProperty": "inputValue"
+                    },
+                    {
+                        "fromId": "7d8e15b9-ffce-7bdf-3a7f-615fd62e8d6b",
+                        "fromProperty": "remappedValue",
+                        "toId": "01ede78b-509a-fb3c-83cc-96561eaedf4d",
+                        "toProperty": "endAngle"
+                    },
+                    {
+                        "fromId": "9b5b12a2-2998-0bbe-99ab-362be577bc9d",
+                        "fromProperty": "savedValue",
+                        "toId": "765648c7-df46-3218-9731-48107f0e047f",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "0c4b5dd0-6f09-782f-17bf-96c65e633164",
+                        "fromProperty": "Value",
+                        "toId": "9b5b12a2-2998-0bbe-99ab-362be577bc9d",
+                        "toProperty": "value"
+                    },
+                    {
+                        "fromId": "0c4b5dd0-6f09-782f-17bf-96c65e633164",
+                        "fromProperty": "Fill Color",
+                        "toId": "01ede78b-509a-fb3c-83cc-96561eaedf4d",
+                        "toProperty": "fillColor"
+                    },
+                    {
+                        "fromId": "cdeff55a-5acc-b87b-54a1-7e90f7ae757a",
+                        "fromProperty": "formatted",
+                        "toId": "765648c7-df46-3218-9731-48107f0e047f",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "9b5b12a2-2998-0bbe-99ab-362be577bc9d",
+                        "fromProperty": "savedValue",
+                        "toId": "cdeff55a-5acc-b87b-54a1-7e90f7ae757a",
+                        "toProperty": "val"
+                    },
+                    {
+                        "fromId": "0c4b5dd0-6f09-782f-17bf-96c65e633164",
+                        "fromProperty": "Format",
+                        "toId": "cdeff55a-5acc-b87b-54a1-7e90f7ae757a",
+                        "toProperty": "format"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "9dc30e9f-c0bc-da38-879b-35ceeda3ba1f",
+                        "type": "Group",
+                        "x": 0,
+                        "y": 0,
+                        "parameters": {
+                            "sizeMode": "contentSize",
+                            "marginTop": {
+                                "value": 2,
+                                "unit": "px"
+                            },
+                            "marginBottom": {
+                                "value": 2,
+                                "unit": "px"
+                            },
+                            "alignX": "center"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "c0fd1fd7-a57b-7332-fa93-20d6b902758e",
+                                "type": "Circle",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {
+                                    "fillColor": "#808080",
+                                    "size": 150
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "01ede78b-509a-fb3c-83cc-96561eaedf4d",
+                                "type": "Circle",
+                                "x": 20,
+                                "y": 92,
+                                "parameters": {
+                                    "fillColor": "#51FF0D",
+                                    "position": "absolute",
+                                    "size": 150
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "88edeb8a-0744-f037-c9cb-515f4d2cda1d",
+                                "type": "Circle",
+                                "x": 20,
+                                "y": 194,
+                                "parameters": {
+                                    "fillColor": "#000000",
+                                    "size": 120,
+                                    "position": "absolute",
+                                    "alignY": "center",
+                                    "alignX": "center"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "765648c7-df46-3218-9731-48107f0e047f",
+                                "type": "Text",
+                                "label": "Text",
+                                "x": 20,
+                                "y": 240,
+                                "parameters": {
+                                    "textAlignX": "center",
+                                    "color": "#FFFFFF",
+                                    "position": "absolute",
+                                    "alignY": "center",
+                                    "fontFamily": "DJB Get Digital.ttf"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "7d8e15b9-ffce-7bdf-3a7f-615fd62e8d6b",
+                        "type": "Number Remapper",
+                        "x": -372.73461290540007,
+                        "y": -63.82693547299965,
+                        "parameters": {
+                            "maxInputValue": 100,
+                            "maxOutputValue": 360
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "9b5b12a2-2998-0bbe-99ab-362be577bc9d",
+                        "type": "Number",
+                        "x": -371.99999999999994,
+                        "y": 55.49999999999994,
+                        "parameters": {
+                            "value": 100
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "0c4b5dd0-6f09-782f-17bf-96c65e633164",
+                        "type": "Component Inputs",
+                        "x": -653,
+                        "y": 148.5,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Value",
+                                "plug": "output",
+                                "type": "*",
+                                "index": 0
+                            },
+                            {
+                                "name": "Fill Color",
+                                "plug": "output",
+                                "type": "*",
+                                "index": 1
+                            },
+                            {
+                                "name": "Format",
+                                "plug": "output",
+                                "type": "*",
+                                "index": 3
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "cdeff55a-5acc-b87b-54a1-7e90f7ae757a",
+                        "type": "String Format",
+                        "x": -261.4044015103497,
+                        "y": 231.1180228607955,
+                        "parameters": {
+                            "format": "{val}%"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "val",
+                                "type": "string",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    }
+                ]
+            },
+            "metadata": {
+                "canvasPos": {
+                    "x": 214.06861405873153,
+                    "y": 78.40771138744249
+                }
+            }
+        },
+        {
+            "name": "/GVH5075",
+            "id": "c7be8202-392f-bb6d-4acf-2cfaaca437d1",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "e8e9566b-b28a-70e5-4867-94500669268d",
+                        "fromProperty": "result",
+                        "toId": "c9c777db-7dbf-674d-0725-0a2fcae77411",
+                        "toProperty": "Value"
+                    },
+                    {
+                        "fromId": "b748d092-fb2d-8d94-6f0c-ff8599124acb",
+                        "fromProperty": "currentValue",
+                        "toId": "e8e9566b-b28a-70e5-4867-94500669268d",
+                        "toProperty": "val"
+                    },
+                    {
+                        "fromId": "e2105aee-1b3e-76a5-0a36-b7c7b328f3b1",
+                        "fromProperty": "currentValue",
+                        "toId": "87b7329e-30e7-2b4d-c60a-e5925dc1a107",
+                        "toProperty": "val"
+                    },
+                    {
+                        "fromId": "87b7329e-30e7-2b4d-c60a-e5925dc1a107",
+                        "fromProperty": "result",
+                        "toId": "af3a3278-c67a-979e-2a0f-36bfe0866eb9",
+                        "toProperty": "Value"
+                    },
+                    {
+                        "fromId": "d7f40d69-bc1b-385f-ace1-23855117850a",
+                        "fromProperty": "formatted",
+                        "toId": "6d0af537-b1e6-ad42-ee6c-19048fc908ff",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "b824f695-d91e-8e4d-ebfe-c7ba3c176ce9",
+                        "fromProperty": "name",
+                        "toId": "53aa734d-f0c4-62bf-9276-c1764609b071",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "b824f695-d91e-8e4d-ebfe-c7ba3c176ce9",
+                        "fromProperty": "temperature",
+                        "toId": "e2105aee-1b3e-76a5-0a36-b7c7b328f3b1",
+                        "toProperty": "targetValue"
+                    },
+                    {
+                        "fromId": "b824f695-d91e-8e4d-ebfe-c7ba3c176ce9",
+                        "fromProperty": "humidity",
+                        "toId": "b748d092-fb2d-8d94-6f0c-ff8599124acb",
+                        "toProperty": "targetValue"
+                    },
+                    {
+                        "fromId": "b824f695-d91e-8e4d-ebfe-c7ba3c176ce9",
+                        "fromProperty": "power",
+                        "toId": "d7f40d69-bc1b-385f-ace1-23855117850a",
+                        "toProperty": "p"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "50333b27-12b9-2d92-965b-5a2b85877e6c",
+                        "type": "Group",
+                        "x": 369.10066762145027,
+                        "y": -32.5,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "15328311-5081-d516-f038-ae8676673efe",
+                                "type": "Group",
+                                "label": "Title",
+                                "x": 217,
+                                "y": 292.5,
+                                "parameters": {
+                                    "sizeMode": "explicit",
+                                    "height": {
+                                        "value": 50,
+                                        "unit": "px"
+                                    },
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderRadius": {
+                                        "value": 4,
+                                        "unit": "px"
+                                    },
+                                    "marginTop": {
+                                        "value": 5,
+                                        "unit": "px"
+                                    },
+                                    "marginLeft": {
+                                        "value": 4,
+                                        "unit": "px"
+                                    },
+                                    "marginRight": {
+                                        "value": 4,
+                                        "unit": "px"
+                                    }
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "53aa734d-f0c4-62bf-9276-c1764609b071",
+                                        "type": "Text",
+                                        "x": 237,
+                                        "y": 351.5,
+                                        "parameters": {
+                                            "textAlignX": "center",
+                                            "textAlignY": "center",
+                                            "sizeMode": "explicit",
+                                            "text": "Room1",
+                                            "textStyle": "H1"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "af3a3278-c67a-979e-2a0f-36bfe0866eb9",
+                                "type": "/ Indicator",
+                                "x": 217,
+                                "y": 433.5,
+                                "parameters": {
+                                    "Format": "Temperature\n{val}℃"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "c9c777db-7dbf-674d-0725-0a2fcae77411",
+                                "type": "/ Indicator",
+                                "x": 217,
+                                "y": 515.5,
+                                "parameters": {
+                                    "Format": "Humidity\n{val}%"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "6d0af537-b1e6-ad42-ee6c-19048fc908ff",
+                                "type": "Text",
+                                "x": 20,
+                                "y": 351,
+                                "parameters": {
+                                    "textAlignX": "center",
+                                    "fontFamily": "DJB Get Digital.ttf",
+                                    "color": "power"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b748d092-fb2d-8d94-6f0c-ff8599124acb",
+                        "type": "Transition",
+                        "x": -70.16342313050689,
+                        "y": 260.9505812924283,
+                        "parameters": {
+                            "duration": 1000
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "e8e9566b-b28a-70e5-4867-94500669268d",
+                        "type": "Expression",
+                        "x": 121.83657686949311,
+                        "y": 263.9505812924283,
+                        "parameters": {
+                            "expression": "floor(val*10)/10"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "val",
+                                "type": "*",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "e2105aee-1b3e-76a5-0a36-b7c7b328f3b1",
+                        "type": "Transition",
+                        "x": -73.16342313050689,
+                        "y": 155.9505812924283,
+                        "parameters": {
+                            "duration": 1000
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "87b7329e-30e7-2b4d-c60a-e5925dc1a107",
+                        "type": "Expression",
+                        "x": 102.83657686949311,
+                        "y": 163.9505812924283,
+                        "parameters": {
+                            "expression": "floor(val*10)/10"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "val",
+                                "type": "*",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "d7f40d69-bc1b-385f-ace1-23855117850a",
+                        "type": "String Format",
+                        "x": -65.68024769748115,
+                        "y": 372.883312608422,
+                        "parameters": {
+                            "format": "Power:{p}%"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "p",
+                                "type": "string",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "b824f695-d91e-8e4d-ebfe-c7ba3c176ce9",
+                        "type": "Component Inputs",
+                        "x": -363.567381054321,
+                        "y": 65.20760283077956,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "name",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 2
+                            },
+                            {
+                                "name": "temperature",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 3
+                            },
+                            {
+                                "name": "humidity",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 4
+                            },
+                            {
+                                "name": "power",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 5
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ]
+            },
+            "metadata": {
+                "canvasPos": {
+                    "x": -213.9587731521225,
+                    "y": 66.7321445889485
+                }
+            }
+        }
+    ],
+    "settings": {},
+    "rootNodeId": "49a0d324-1997-0e88-a5cf-019ac0b66373",
+    "version": "1",
+    "metadata": {
+        "dbCollections": [],
+        "styles": {
+            "text": {
+                "H1": {
+                    "fontFamily": "Arial Black",
+                    "fontSize": {
+                        "value": "20",
+                        "unit": "px"
+                    }
+                }
+            },
+            "colors": {
+                "wh": "#FFFFFF",
+                "on": "#F0BF56",
+                "off": "#434B53",
+                "power": "#2905F5"
+            }
+        }
+    }
+}
